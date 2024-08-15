@@ -15,7 +15,6 @@
         #icon1{margin-right: 4%; margin-top: 0.5%; height: 7vh; width: 4%; border-radius:50%; background-color: #F96302;}
         #icon1:hover{background-color:black; cursor: pointer;}
         #i1{margin:15px 18px; color: white;}
-        #i2{margin-left: 170px; margin-top: 10px; color: #707070; font-size: 20px;}
         nav{display: flex; justify-content: space-around;}     
         ul{display: flex; margin-left: 60%;}
         li{list-style-type: none; margin: 10px; font-weight: bold;}
@@ -29,17 +28,20 @@
         #p2{text-align: center; font-size: larger; line-height:0px;}
         #p3{text-align: center; font-size: larger;}
         #box1{margin-left: 20px;}
-        #box2{margin-top:-12px; background-color:white;  width: 550px; height: 6vh; box-shadow: rgba(0, 0, 0, 0.22) 1px 4px 7px 2px}
-        #input1{border:none; margin-left: 10px; font-size: 15px;}
-        select{border: none; padding-right: 50px; margin-left: 20px;}
-        #box3{position: relative; bottom: 350px; left: 800px; background-color: black; width: 350px; height: 53vh; border-radius:6%;}
+        #box2{position: relative; margin-top:-12px; background-color:white;  width: 550px; height: 6vh; box-shadow: rgba(0, 0, 0, 0.22) 1px 4px 7px 2px}
+        #box3{position:absolute; bottom: 240px; left: 850px; background-color: black; width: 350px; height: 55vh; border-radius:6%;}
+        #box4{position: absolute; top:600px; right:0%; height: 1000px; width: 100%; background-color: #F5F5F5;}
+        .box5{display: flex; justify-content: space-around;} 
+        #i2:hover{cursor:pointer;}
+        #i2{position: absolute; right: 2%; bottom: 10px; color: #707070; font-size: 20px;}
+        #input1{outline: none; border:none; font-size: 15px; height: 37px; width: 380px; margin: 0 0 0 -4px; padding: 1px 2px 1px 2px}
+        select{outline:none; height: 43px; width: 145px; border: none; padding-right: 50px; margin-left: 20px;}
         h2{color: white; text-align: center;padding-top: 20px; font-size: 30px; font-weight: 500; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
         .input2{width: 90%; height: 4vh; margin-left: 15px; margin-top: 10px;}
         .select2{width: 92%; height: 5vh; margin-left: 15px; margin-top: 10px;}
         button{width: 92%; height: 5vh; margin-left: 15px; margin-top: 10px; border: none; background-color: #FE8315; color: white;}
         button:hover{background-color:white; color: black; cursor: pointer;}
         #span2{font-weight:bold; color: #707079;}
-        #box4{padding-top: 10px; position: relative; bottom: 300px; background-color: #F5F5F5;}
         .b1{border: 1px solid; text-align: center; width:200px; height: 120px; margin-top: 10px; margin-bottom: 10px; border-radius:0.5rem;}
         .b1:hover{background-color:#C1C1C1; cursor: pointer;}
         #img2{margin-top: 20px;}
@@ -73,9 +75,6 @@
         .cards:hover .h7{display: none; color: white; cursor: pointer;}
         .cards:hover .h8{display: none; color: white; cursor: pointer;}
         .cards:hover .h9{display: none; color: white; cursor: pointer;}
-        .box5{display: flex; justify-content: space-around; padding-bottom: 30px;}
-
-    
     </style>
 </head>
 <body>
@@ -96,7 +95,7 @@
     </p>
   
     <div id="box2">
-        <select name="" id="">
+        <select>
             <option value="">Karachi</option>
             <option value="">Lahore</option>
         </select>
@@ -124,7 +123,7 @@
 </div>
 
 <div id="box4">
-    <h1 id="h2"  class="animate__animated animate__fadeInLeft  animate__delay-10s animate__infinite">Our Top Services</h1>
+    <h1 id="h2"  class="animate__animated animate__fadeInLeft  animate__delay-1s">Our Top Services</h1>
     <p id="p2">Kam Kaj provides ultimate installations, repairs, maintenance, and grooming services at your doorstep.</p>
     <div id="bm" class="animate__animated animate__bounce">
         <div class="b1"><img src="img/icons8-appliances-48.png" id="img2"><p id="p3">Home Appliance Repair</p></div>        
@@ -133,7 +132,8 @@
         <div class="b1"><img src="img/icons8-plumbing-48.png" id="img5"><p id="p3">Plumbing Services</p></div>        
         <div class="b1"><img src="img/icons8-insecticide-94.png" id="img6"><p id="p3">Pest Control Services</p></div>        
     </div>
-    <h1 id="h3"  class="animate__animated animate__fadeInLeft animate__delay-10s  animate__infinite">Recommended Services</h1>
+
+    <h1 id="h3"  class="animate__animated animate__fadeInLeft animate__delay-1s">Recommended Services</h1>
     <p id="p3">Services highly recommended by our valuable customers.</p>
 
     <div class="box5">
@@ -144,30 +144,30 @@
             <div class="book">Book Now</div>
         </div>
         
-            <div id="card2"  class="cards"> 
+        <div id="card2" class="cards"> 
                 <h1 class="h6">Sofa Cleaning</h1> 
                 <h2 class="h5">Sofa Cleaning</h1> 
                 <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illo deleniti? Dolore dolorem in voluptatem laborum odio nobis qui, debitis fugit temporibus, non quam sed quod cum voluptate harum! Velit!</p> 
                 <div class="book">Book Now</div>
-            </div>        
+        </div>        
                
                
-                <div id="card3"  class="cards"> 
+        <div id="card3" class="cards"> 
                     <h1 class="h6">Carpet Cleaning</h1> 
                     <h2 class="h5">Carpet Cleaning</h1> 
                     <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illo deleniti? Dolore dolorem in voluptatem laborum odio nobis qui, debitis fugit temporibus, non quam sed quod cum voluptate harum! Velit!</p> 
                     <div class="book">Book Now</div>
-                </div>
+         </div>
                  
                  
-                    <div id="card4" class="cards"> 
+        <div id="card4" class="cards"> 
                         <h1 class="h4">Ac Install and Repair Service</h1> 
                         <h2 class="h5">Ac Install and Repair Service</h1> 
                         <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illo deleniti? Dolore dolorem in voluptatem laborum odio nobis qui, debitis fugit temporibus, non quam sed quod cum voluptate harum! Velit!</p> 
                         <div class="book">Book Now</div>
-                    </div>
+         </div>
                                 
-        </div>
+    </div>
 
         
     <div class="box5">
@@ -178,7 +178,7 @@
             <div class="book">Book Now</div>
         </div>
         
-            <div id="card6"  class="cards"> 
+            <div id="card6" class="cards"> 
                 <h1 class="h8">Refrigerator and Deep Freezer Repair</h1> 
                 <h2 class="h5">Refrigerator and Deep Freezer Repair</h1> 
                 <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illo deleniti? Dolore dolorem in voluptatem laborum odio nobis qui, debitis fugit temporibus, non quam sed quod cum voluptate harum! Velit!</p> 
@@ -186,7 +186,7 @@
             </div>        
                
                
-                <div id="card7"  class="cards"> 
+                <div id="card7" class="cards"> 
                     <h1 class="h9">Microwave Repair</h1> 
                     <h2 class="h5">Microwave Repair</h1> 
                     <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illo deleniti? Dolore dolorem in voluptatem laborum odio nobis qui, debitis fugit temporibus, non quam sed quod cum voluptate harum! Velit!</p> 
@@ -194,14 +194,14 @@
                 </div>
                  
                  
-                    <div id="card8" class="cards"> 
+                    <div id="card8"  class="cards"> 
                         <h1 class="h4">Pest Control Service</h1> 
                         <h2 class="h5">Pest Control Service</h1> 
                         <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illo deleniti? Dolore dolorem in voluptatem laborum odio nobis qui, debitis fugit temporibus, non quam sed quod cum voluptate harum! Velit!</p> 
                         <div class="book">Book Now</div>
                     </div>
                                 
-        </div>
+        
 
     </div>
 
